@@ -4,11 +4,15 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import DisprzSdk
 import Foundation
+import GoogleMaps
 import React
 import Swift
 import _Concurrency
 import _StringProcessing
+import react_native_config
+import react_native_orientation
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class DisprzSdkViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) open var authUrl: Swift.String
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
